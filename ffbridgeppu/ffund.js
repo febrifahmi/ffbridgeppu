@@ -17,7 +17,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 function CalcFFundamentalLow(bridgespan) {
     let lobound = 9999
     const e = 2.71828183
-    if (bridgespan <= 10) {
+    if (bridgespan <= 10 || bridgespan > 500) {
         return lobound
     } else if (bridgespan > 10 && bridgespan <= 500) {
         lobound = e ** (4.157 - 0.847 * (Math.log(bridgespan)))
@@ -35,7 +35,7 @@ function CalcFFundamentalLow(bridgespan) {
 function CalcFFundamentalHigh(bridgespan) {
     let hibound = 9999
     const e = 2.71828183
-    if (bridgespan <= 10) {
+    if (bridgespan <= 10 || bridgespan > 500) {
         return hibound
     } else if (bridgespan > 10 && bridgespan <= 500) {
         hibound = e ** (4.020 - 0.789 * (Math.log(bridgespan)))
