@@ -1,0 +1,30 @@
+{
+  "name": "ffbridgeppu",
+  "version": "0.0.1",
+  "description": "Frequency fundamental for bridge health monitoring",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/febrifahmi/ffbridgeppu.git"
+  },
+  "keywords": [
+    "bridge",
+    "frequency",
+    "fundamental",
+    "health",
+    "monitoring"
+  ],
+  "author": "Hinawan Teguh Santoso and Febri Fahmi Hakim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/febrifahmi/ffbridgeppu/issues"
+  },
+  "homepage": "https://github.com/febrifahmi/ffbridgeppu#readme",
+  "dependencies": {
+    "jest": "^29.5.0",
+    "jest-coverage-badges": "^1.0.0"
+  }
+}
